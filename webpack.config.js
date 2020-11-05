@@ -3,14 +3,14 @@ const path = require('path')
 // для генерации файла разметки на основе шаблона
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 // для удаления старых версий сборок
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 // для задания явного простого копирования статических файлов из одного каталога в другой
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 // для настройки минификации
 const TerserWebpackPlugin = require('terser-webpack-plugin')
-const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 // параметр development добавляется в файле package.json в сценариях,
 // а пакет cross-env позволяет кроссплатформенно передавать его
 // в переменную окружения
